@@ -1,5 +1,8 @@
 Azure template for easier storage vm creation
 
+This Azure template supposed to create a VM with 1 nic with public IP attached
+to it and a disk storage with 5 disks in it.
+
 How to use
 ----------
 
