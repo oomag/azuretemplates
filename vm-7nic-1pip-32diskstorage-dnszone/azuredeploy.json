@@ -90,7 +90,7 @@
     },
     "customScriptFilePath": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/dokkur/azuretemplates/master/vm-7nic-1pip-1diskstorage-dnszone/config.sh",
+      "defaultValue": "https://raw.githubusercontent.com/dokkur/azuretemplates/master/vm-7nic-1pip-32diskstorage-dnszone/config.sh",
       "metadata": {
         "description": "GitHub location of the custom script that configures Gluster"
       }
@@ -416,7 +416,286 @@
                 "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk01.vhd')]"
               },
               "createOption": "Empty"
-            }
+            },
+            {
+              "name": "datadisk2",
+              "diskSizeGB": "1024",
+              "lun": 2,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk02.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk3",
+              "diskSizeGB": "1024",
+              "lun": 3,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk03.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk4",
+              "diskSizeGB": "1024",
+              "lun": 4,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk04.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk5",
+              "diskSizeGB": "1024",
+              "lun": 5,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk05.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk6",
+              "diskSizeGB": "1024",
+              "lun": 6,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk06.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk7",
+              "diskSizeGB": "1024",
+              "lun": 7,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk07.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk8",
+              "diskSizeGB": "1024",
+              "lun": 8,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk08.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk9",
+              "diskSizeGB": "1024",
+              "lun": 9,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk09.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk10",
+              "diskSizeGB": "1024",
+              "lun": 10,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk10.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk11",
+              "diskSizeGB": "1024",
+              "lun": 11,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk11.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk12",
+              "diskSizeGB": "1024",
+              "lun": 12,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk12.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk13",
+              "diskSizeGB": "1024",
+              "lun": 13,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk13.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk14",
+              "diskSizeGB": "1024",
+              "lun": 14,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk14.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk15",
+              "diskSizeGB": "1024",
+              "lun": 15,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk15.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk16",
+              "diskSizeGB": "1024",
+              "lun": 16,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk16.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk17",
+              "diskSizeGB": "1024",
+              "lun": 17,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk17.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk18",
+              "diskSizeGB": "1024",
+              "lun": 18,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk18.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk19",
+              "diskSizeGB": "1024",
+              "lun": 19,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk19.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk20",
+              "diskSizeGB": "1024",
+              "lun": 20,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk20.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk21",
+              "diskSizeGB": "1024",
+              "lun": 21,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk21.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk22",
+              "diskSizeGB": "1024",
+              "lun": 22,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk22.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk23",
+              "diskSizeGB": "1024",
+              "lun": 23,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk23.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk24",
+              "diskSizeGB": "1024",
+              "lun": 24,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk24.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk25",
+              "diskSizeGB": "1024",
+              "lun": 25,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk25.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk26",
+              "diskSizeGB": "1024",
+              "lun": 26,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk26.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk27",
+              "diskSizeGB": "1024",
+              "lun": 27,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk27.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk28",
+              "diskSizeGB": "1024",
+              "lun": 28,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk28.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk29",
+              "diskSizeGB": "1024",
+              "lun": 29,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk29.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk30",
+              "diskSizeGB": "1024",
+              "lun": 30,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk30.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk31",
+              "diskSizeGB": "1024",
+              "lun": 31,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk31.vhd')]"
+              },
+              "createOption": "Empty"
+            },
+            {
+              "name": "datadisk32",
+              "diskSizeGB": "1024",
+              "lun": 32,
+              "vhd": {
+                "uri": "[concat('http://', variables('storageName'), '.blob.core.windows.net/vhds/', parameters('vmNamePrefix'), 'datadisk32.vhd')]"
+              },
+    "createOption": "Empty"
+  }
           ]
         },
         "networkProfile": {

@@ -1,6 +1,7 @@
 Azure template for easier storage vm creation
 This version creates a machine with 32Tb storage and 8 network interfaces (one
-of which has public IP).
+of which has public IP). Also it creates a DNS zone with a hostname which point
+to all of private IP addresses of there 8 nics.
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
