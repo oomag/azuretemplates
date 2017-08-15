@@ -1,7 +1,7 @@
 Azure template for easier storage vm creation
 
-This Azure template supposed to create a VM with 1 nic with public IP attached
-to it and a disk storage with 5 disks in it.
+This Azure template supposed to create a VM with 7 nic with public IP attached
+to first of them and a disk storage with 1 disk in it.
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
@@ -27,7 +27,7 @@ and then start the deployment of VM:
 
 `$ az group deployment create --name TestStorageDeploy
   --resource-group ExampleGroup
-  --template-uri https://raw.githubusercontent.com/dokkur/azuretemplates/master/vm-1nic-1pip-5diskstorage/azuredeploy.json
+  --template-uri https://raw.githubusercontent.com/dokkur/azuretemplates/master/vm-7nic-1pip-1diskstorage/azuredeploy.json
 `
 
 You will be asked about vm name, network name, admin username and password.
