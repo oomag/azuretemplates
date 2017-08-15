@@ -97,7 +97,7 @@
     },
     "customScriptFilePath": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/sorrowless/azuretemplates/master/storage/config.sh",
+      "defaultValue": "https://raw.githubusercontent.com/sorrowless/azuretemplates/master/vm-1nic-1pip-5diskstorage/config.sh",
       "metadata": {
         "description": "GitHub location of the custom script that configures Gluster"
       }
