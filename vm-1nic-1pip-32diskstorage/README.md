@@ -1,7 +1,9 @@
 Azure template for easier storage vm creation
 
 This Azure template supposed to create a VM with 1 nic with public IP attached
-to it and a disk storage with 5 disks in it.
+to it and a disk storage with 32 disks in it.
+
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
 How to use
 ----------
@@ -25,7 +27,7 @@ and then start the deployment of VM:
 
 `$ az group deployment create --name TestStorageDeploy
   --resource-group ExampleGroup
-  --template-uri https://raw.githubusercontent.com/sorrowless/azuretemplates/master/storage/azuredeploy.json
+  --template-uri https://raw.githubusercontent.com/dokkur/azuretemplates/master/vm-1nic-1pip-32diskstorage/azuredeploy.json
 `
 
 You will be asked about vm name, network name, admin username and password.
